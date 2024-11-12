@@ -27,4 +27,4 @@
 Terminaalissa pitäisi näkyä:
 Local:   http://localhost:XXXX/
 
-Selaimella osoitteeseen: http://localhost:XXXX ja badabim badabum
+6. Selaimella osoitteeseen: http://localhost:XXXX ja badabim badabum
