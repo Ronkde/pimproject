@@ -1,0 +1,21 @@
+Vaatimukset:
+
+Node.js 14.0.0 tai uudempi
+npm 6.0.0 tai uudempi
+
+
+Kuinka (ehkä) saada toimimaan omalla koneella?
+
+VSCODE terminaaliin:
+
+1. git clone https://github.com/Ronkde/pimproject.git
+2. cd pimproject
+3. npm install
+4. npm run dev
+
+Terminaalissa pitäisi näkyä:
+Local:   http://localhost:XXXX/
+
+Selaimella osoitteeseen: http://localhost:XXXX
+
+Testasin omalla koneella missä ei ollu mitään asennettuna ja toimi.

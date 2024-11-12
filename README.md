@@ -1,8 +1,29 @@
-# React + Vite
+# Project Name
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Vaatimukset
 
-Currently, two official plugins are available:
+- Node.js 14.0.0 tai uudempi
+- npm 6.0.0 tai uudempi
+- Git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Kuinka (ehkä) saada toimimaan omalla koneella?
+
+1. Asenna Git, jos sitä ei ole jo asennettu:
+   [https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+2. Asenna Node.js, jos sitä ei ole jo asennettu:
+   [https://nodejs.org/](https://nodejs.org/)
+
+3. Varmista, että sinut on kutsuttu projektin yhteistyökumppaniksi:
+   - Saat sähköpostikutsun, kun sinut on lisätty yhteistyökumppaniksi.
+   - Hyväksy kutsu sähköpostissa olevan linkin kautta.
+
+4. Avaa terminaali (voit käyttää VSCode:n integroitua terminaalia tai muuta terminaalisovellusta).
+
+5. VSCODE terminaaliin (tai muuhun terminaaliin):
+
+   ```sh
+   git clone https://github.com/Ronkde/pimproject.git
+   cd pimproject
+   npm install
+   npm run dev
