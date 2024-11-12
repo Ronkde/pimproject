@@ -1,4 +1,4 @@
-# Project Name
+# Personal Inventory Management
 
 ## Vaatimukset
 
