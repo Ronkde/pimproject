@@ -229,3 +229,21 @@ button:hover {
 .navbar-home-button:hover {
   background-color: #6d8a9b; /* Slightly darker blue on hover */
 }
+
+/* src/Styling.css */
+
+.view-item {
+  color: black; /* Set text color to black */
+  background-color: white; /* Optional: Set background color to white */
+  padding: 20px; /* Optional: Add some padding */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.view-item h2 {
+  margin-bottom: 10px;
+}
+
+.view-item p {
+  margin: 5px 0;
+}

@@ -15,7 +15,7 @@ const ListView = ({ title, items, itemType }) => {
               {itemType ? (
                 <Link to={`/${itemType}/${item}`}>{item}</Link>
               ) : (
-                item
+                <Link to={`/item/${item}`}>{item}</Link>
               )}
             </li>
           ))}

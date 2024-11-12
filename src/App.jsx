@@ -10,6 +10,7 @@ import ListView from './ListView';
 import Modal from './Modal';
 import LocationItems from './LocationItems';
 import CategoryItems from './CategoryItems';
+import ViewItem from './ViewItem';
 import './Styling.css';
 
 const App = () => {
@@ -81,6 +82,7 @@ const App = () => {
             <Route path="/view-custom-labels" element={<ListView title="All Custom Labels" items={items.map(i => i.customLabel).filter(label => label)} />} />
             <Route path="/location/:location" element={<LocationItems items={items} />} />
             <Route path="/category/:category" element={<CategoryItems items={items} />} />
+            <Route path="/item/:itemName" element={<ViewItem items={items} />} />
           </Routes>
         </div>
         {showAddItemForm && (

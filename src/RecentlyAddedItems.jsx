@@ -9,7 +9,7 @@ const RecentlyAddedItems = ({ items }) => {
       <ul>
         {items.slice(-5).map((item, index) => (
           <li key={index}>
-            {item.name} - <Link to={`/location/${item.location}`}>{item.location}</Link>
+            <Link to={`/item/${item.name}`}>{item.name}</Link> - <Link to={`/location/${item.location}`}>{item.location}</Link>
           </li>
         ))}
       </ul>
