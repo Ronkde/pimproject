@@ -15,10 +15,12 @@
    [https://nodejs.org/](https://nodejs.org/)
 
 3. VSCODE terminaaliin:
-
    ```sh
-   git clone https://github.com/Ronkde/pimproject.git
-   cd pimproject
+   git clone https://github.com/Ronkde/pimproject.git   
+
+4. Navigoi kansioon /pimproject VSCODEssa
+5. VSCODE terminaaliin:
+   ```sh
    npm install
    npm run dev
 
