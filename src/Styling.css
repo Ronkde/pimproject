@@ -1,0 +1,231 @@
+/* General app styling */
+.app {
+  text-align: center;
+  background-color: #c9d6d3; /* Light sage green background */
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  gap: 10px;
+  background-color: #b4c2cc; /* Light blue-grey background */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Button styling in navbar */
+button {
+  background-color: #7c96a6; /* Light blue button */
+  color: #ffffff; /* White text */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #6d8a9b; /* Slightly darker blue on hover */
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropdown-button {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #7c96a6; /* Light blue button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.dropdown-button:hover {
+  background-color: #6d8a9b; /* Slightly darker blue on hover */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text for readability */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* Dropdown items */
+.dropdown-item {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+}
+
+/* Summary and recently added items styling */
+.summary, .recently-added-items {
+  margin: 20px;
+  background-color: #ffffff; /* White background */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Summary and recently added items styling */
+.summary, .recently-added-items {
+  margin: 20px;
+  background-color: #ffffff; /* White background */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #000000; /* Ensure text is black */
+}
+
+/* Header and title styling */
+h1, h2 {
+  color: #333333; /* Dark grey text for header */
+  font-weight: bold;
+}
+
+/* Specific style for the "Summary" title */
+.summary h2 {
+  color: #333333; /* Ensure dark text for summary title */
+}
+
+
+/* Recently added items */
+.recently-added-items .item {
+  background-color: #f5d7d7; /* Light pink background for item cards */
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: #000000; /* Black text for readability */
+}
+
+/* Header and title styling */
+h1, h2 {
+  color: #333333; /* Dark grey text for header */
+  font-weight: bold;
+}
+
+/* Text fields for summary and search */
+.summary input[type="text"], .summary input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* Search box */
+.search input {
+  border: 1px solid #b4c2cc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Ensure the entire app scales with the window */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Optional: Hide scrollbars */
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  gap: 10px;
+  background-color: #b4c2cc;
+  padding: 10px;
+  justify-content: center;
+}
+
+/* Content area */
+.content {
+  flex: 1; /* Allows the content to take the remaining space */
+  overflow-y: auto; /* Allows vertical scrolling if content overflows */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Summary and recently added items container */
+.summary, .recently-added-items {
+  width: 90%; /* Makes the sections responsive */
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+
+/* Make item cards responsive */
+.recently-added-items .item {
+  width: 100%;
+  background-color: #f5d7d7;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  align-items: center
+}
+
+/* Navbar button styling */
+button {
+  background-color: #7c96a6;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #6d8a9b;
+}
+
+/* src/Styling.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #b4c2cc; /* Light blue-grey background */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar-home-button {
+  background-color: #7c96a6; /* Light blue button */
+  color: #ffffff; /* White text */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none; /* Remove underline from link */
+}
+
+.navbar-home-button:hover {
+  background-color: #6d8a9b; /* Slightly darker blue on hover */
+}
