@@ -14,17 +14,19 @@
 2. Asenna Node.js, jos sitä ei ole jo asennettu:
    [https://nodejs.org/](https://nodejs.org/)
 
-3. VSCODE terminaaliin:
-   ```sh
-   git clone https://github.com/Ronkde/pimproject.git   
+3. Navigoi VSCODEssa sinne mihin haluat pimproject kansion, jos kirjoitat terminaaliin esim "cd E:/random_bullshit" niin projektin sijainti tulee olemaan "E:/random_bullshit/pimproject"
 
-4. Navigoi kansioon /pimproject VSCODEssa
-5. VSCODE terminaaliin:
+4. VSCODE terminaaliin:
+   ```sh
+   git clone https://github.com/Ronkde/pimproject.git  
+
+5. Navigoi kansioon /pimproject VSCODEssa. Varmista, että olet oikeassa kansiossa klikkaamalla "Explorer" välilehteä, siellä pitäisi näkyä PIMPROJECT, node_modules, public, src yms skeidaa.
+
+6. VSCODE terminaaliin:
    ```sh
    npm install
    npm run dev
 
-Terminaalissa pitäisi näkyä:
-Local:   http://localhost:XXXX/
+Terminaalissa pitäisi näkyä: http://localhost:XXXX/
 
-6. Selaimella osoitteeseen: http://localhost:XXXX ja badabim badabum
+7. Selaimella osoitteeseen: http://localhost:XXXX ja badabim badabum
