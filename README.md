@@ -14,16 +14,15 @@
 2. Asenna Node.js, jos sitä ei ole jo asennettu:
    [https://nodejs.org/](https://nodejs.org/)
 
-3. Varmista, että sinut on kutsuttu projektin yhteistyökumppaniksi:
-   - Saat sähköpostikutsun, kun sinut on lisätty yhteistyökumppaniksi.
-   - Hyväksy kutsu sähköpostissa olevan linkin kautta.
-
-4. Avaa terminaali (voit käyttää VSCode:n integroitua terminaalia tai muuta terminaalisovellusta).
-
-5. VSCODE terminaaliin (tai muuhun terminaaliin):
+3. VSCODE terminaaliin:
 
    ```sh
    git clone https://github.com/Ronkde/pimproject.git
    cd pimproject
    npm install
    npm run dev
+
+Terminaalissa pitäisi näkyä:
+Local:   http://localhost:XXXX/
+
+Selaimella osoitteeseen: http://localhost:XXXX ja badabim badabum
