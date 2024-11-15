@@ -1,36 +1,33 @@
 // src/Navbar.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import DropdownMenu from './DropdownMenu';
 
-const Navbar = ({ locations, categories, onMenuItemClick }) => {
+const Navbar = ({ onMenuItemClick }) => {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-home-button">Home</Link>
-      <DropdownMenu
-        label="Inventory"
-        items={[
-          <span key="add-new-item" onClick={() => onMenuItemClick('Add new item')}>Add new item</span>,
-          <Link to="/view-items" key="view-all-items">View all items</Link>,
-          <Link to="/view-custom-labels" key="view-all-custom-labels">View all custom labels</Link>
-        ]}
-      />
-      <DropdownMenu
-        label="Locations"
-        items={[
-          <span key="add-new-location" onClick={() => onMenuItemClick('Add new location')}>Add new location</span>,
-          <Link to="/view-locations" key="view-all-locations">View all locations</Link>,
-          ...locations.map((loc, index) => <Link to={`/location/${loc}`} key={index}>{loc}</Link>)
-        ]}
-      />
-      <DropdownMenu
-        label="Categories"
-        items={[
-          <span key="add-new-category" onClick={() => onMenuItemClick('Add new category')}>Add new category</span>,
-          <Link to="/view-categories" key="view-all-categories">View all categories</Link>,
-          ...categories.map((cat, index) => <Link to={`/category/${cat}`} key={index}>{cat}</Link>)
-        ]}
-      />
+      <div className="dropdown">
+        <button className="dropdown-button">Inventory</button>
+        <div className="dropdown-content">
+          <button onClick={() => onMenuItemClick('Add new item')}>Add New Item</button>
+          <Link to="/view-items">View All Items</Link>
+          <Link to="/view-custom-labels">View Custom Labels</Link>
+        </div>
+      </div>
+      <div className="dropdown">
+        <button className="dropdown-button">Locations</button>
+        <div className="dropdown-content">
+          <button onClick={() => onMenuItemClick('Add new location')}>Add New Location</button>
+          <Link to="/view-locations">View All Locations</Link>
+        </div>
+      </div>
+      <div className="dropdown">
+        <button className="dropdown-button">Categories</button>
+        <div className="dropdown-content">
+          <button onClick={() => onMenuItemClick('Add new category')}>Add New Category</button>
+          <Link to="/view-categories">View All Categories</Link>
+        </div>
+      </div>
     </nav>
   );
 };

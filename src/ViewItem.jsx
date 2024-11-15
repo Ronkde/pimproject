@@ -1,10 +1,11 @@
 // src/ViewItem.jsx
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import './Styling.css'; // Import the CSS file
 
-const ViewItem = ({ items, updateItem }) => {
+const ViewItem = ({ items, updateItem, deleteItem }) => {
   const { itemName } = useParams();
+  const navigate = useNavigate();
   const item = items.find(i => i.name === itemName);
   const [isEditing, setIsEditing] = useState(false);
   const [editedItem, setEditedItem] = useState({ ...item });
@@ -26,6 +27,14 @@ const ViewItem = ({ items, updateItem }) => {
     e.preventDefault();
     updateItem(editedItem);
     setIsEditing(false);
+  };
+
+  const handleDelete = () => {
+    const confirmed = window.confirm(`Are you sure you want to delete ${item.name}?`);
+    if (confirmed) {
+      deleteItem(item.name);
+      navigate('/');
+    }
   };
 
   return (
@@ -53,6 +62,7 @@ const ViewItem = ({ items, updateItem }) => {
             <input type="text" name="customLabel" value={editedItem.customLabel} onChange={handleChange} />
           </div>
           <button type="submit">Save</button>
+          <button type="button" onClick={handleDelete}>Delete</button>
         </form>
       ) : (
         <>
