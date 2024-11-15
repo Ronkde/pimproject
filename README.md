@@ -20,7 +20,7 @@
    ```sh
    git clone https://github.com/Ronkde/pimproject.git  
 
-5. Navigoi kansioon /pimproject VSCODEssa. Varmista, että olet oikeassa kansiossa klikkaamalla "Explorer" välilehteä, siellä pitäisi näkyä PIMPROJECT, node_modules, public, src yms skeidaa.
+5. Navigoi kansioon /pimproject VSCODEssa. Varmista, että olet oikeassa kansiossa klikkaamalla "Explorer" välilehteä, siellä pitäisi näkyä PIMPROJECT, node_modules, public, src yms skeidaa. Myös terminaalissa pitäisi näkyä viimeisimpänä esim. "E:/random_bullshit/pimproject"
 
 6. VSCODE terminaaliin:
    ```sh
