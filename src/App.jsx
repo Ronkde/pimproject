@@ -36,6 +36,10 @@ const App = () => {
     setShowAddCategoryForm(false); // Close the modal after adding a category
   };
 
+  const updateItem = (updatedItem) => {
+    setItems(items.map(item => (item.name === updatedItem.name ? updatedItem : item)));
+  };
+
   const handleMenuItemClick = (item) => {
     if (item === 'Add new item') {
       setShowAddItemForm(true);
@@ -82,7 +86,7 @@ const App = () => {
             <Route path="/view-custom-labels" element={<ListView title="All Custom Labels" items={items.map(i => i.customLabel).filter(label => label)} />} />
             <Route path="/location/:location" element={<LocationItems items={items} />} />
             <Route path="/category/:category" element={<CategoryItems items={items} />} />
-            <Route path="/item/:itemName" element={<ViewItem items={items} />} />
+            <Route path="/item/:itemName" element={<ViewItem items={items} updateItem={updateItem} />} />
           </Routes>
         </div>
         {showAddItemForm && (
