@@ -1,6 +1,6 @@
 // src/components/DropdownMenu.jsx
-import React, { useState, useEffect, useRef } from 'react';
-import './Styling.css';
+import React, { useState, useEffect, useRef } from "react";
+import "./Styling.css";
 
 const DropdownMenu = ({ label, items }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +18,9 @@ const DropdownMenu = ({ label, items }) => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -32,7 +32,11 @@ const DropdownMenu = ({ label, items }) => {
       {isOpen && (
         <div className="dropdown-menu">
           {items.map((item, index) => (
-            <div key={index} className="dropdown-item" onClick={() => setIsOpen(false)}>
+            <div
+              key={index}
+              className="dropdown-item"
+              onClick={() => setIsOpen(false)}
+            >
               {item}
             </div>
           ))}
