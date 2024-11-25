@@ -1,15 +1,17 @@
 // src/CategoryList.jsx
-import React, { useState } from 'react';
-import './Styling.css'
+import React, { useState } from "react";
+import "./Styling.css";
 
 const CategoryList = ({ categories, items }) => {
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
   };
 
-  const filteredItems = items.filter(item => item.category === selectedCategory);
+  const filteredItems = items.filter(
+    (item) => item.category === selectedCategory
+  );
 
   return (
     <div>
