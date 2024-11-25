@@ -1,11 +1,11 @@
 // src/ViewLocation.jsx
-import React, { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
 const ViewLocation = ({ locations, updateLocation, deleteLocation }) => {
   const { locationName } = useParams();
   const navigate = useNavigate();
-  const location = locations.find(loc => loc === locationName);
+  const location = locations.find((loc) => loc === locationName);
   const [isEditing, setIsEditing] = useState(false);
   const [editedLocation, setEditedLocation] = useState(location);
 
@@ -28,10 +28,12 @@ const ViewLocation = ({ locations, updateLocation, deleteLocation }) => {
   };
 
   const handleDelete = () => {
-    const confirmed = window.confirm(`Are you sure you want to delete ${location}?`);
+    const confirmed = window.confirm(
+      `Are you sure you want to delete ${location}?`
+    );
     if (confirmed) {
       deleteLocation(location);
-      navigate('/view-locations');
+      navigate("/view-locations");
     }
   };
 
@@ -41,10 +43,17 @@ const ViewLocation = ({ locations, updateLocation, deleteLocation }) => {
         <form onSubmit={handleSubmit}>
           <div>
             <label>Location Name</label>
-            <input type="text" value={editedLocation} onChange={handleChange} required />
+            <input
+              type="text"
+              value={editedLocation}
+              onChange={handleChange}
+              required
+            />
           </div>
           <button type="submit">Save</button>
-          <button type="button" onClick={handleDelete}>Delete</button>
+          <button type="button" onClick={handleDelete}>
+            Delete
+          </button>
         </form>
       ) : (
         <>
