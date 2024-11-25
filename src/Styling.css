@@ -1,5 +1,6 @@
 /* General styles */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,7 +20,7 @@ body, html {
 
 /* Header styling */
 header {
-  background-color: #B2C2B9; /* Green background */
+  background-color: #b2c2b9; /* Green background */
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -37,9 +38,11 @@ header {
 }
 
 /* Button styling in navbar */
-button, .navbar-home-button, .dropdown-button {
-  background-color: #91A7C5; /* Light blue button */
-  color: #FFFFFF;
+button,
+.navbar-home-button,
+.dropdown-button {
+  background-color: #91a7c5; /* Light blue button */
+  color: #ffffff;
   padding: 8px 16px;
   border: none;
   border-radius: 4px;
@@ -48,8 +51,10 @@ button, .navbar-home-button, .dropdown-button {
   text-decoration: none; /* Remove underline from link */
 }
 
-button:hover, .navbar-home-button:hover, .dropdown-button:hover {
-  background-color: #7C96A6; /* Slightly darker blue on hover */
+button:hover,
+.navbar-home-button:hover,
+.dropdown-button:hover {
+  background-color: #7c96a6; /* Slightly darker blue on hover */
   color: #ffffff; /* Ensure text color remains white */
 }
 
@@ -69,7 +74,8 @@ button:hover, .navbar-home-button:hover, .dropdown-button:hover {
   z-index: 1;
 }
 
-.dropdown-content a, .dropdown-content button {
+.dropdown-content a,
+.dropdown-content button {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -80,7 +86,8 @@ button:hover, .navbar-home-button:hover, .dropdown-button:hover {
   width: 100%;
 }
 
-.dropdown-content a:hover, .dropdown-content button:hover {
+.dropdown-content a:hover,
+.dropdown-content button:hover {
   background-color: #f1f1f1; /* Light grey background on hover */
 }
 
@@ -90,15 +97,17 @@ button:hover, .navbar-home-button:hover, .dropdown-button:hover {
 }
 
 /* Header and title styling */
-h1, h2 {
+h1,
+h2 {
   color: #333333; /* Dark grey for headers */
   font-weight: bold;
 }
 
 /* Summary and recently added items styling */
-.summary, .recently-added-items {
+.summary,
+.recently-added-items {
   margin: 20px;
-  background-color: #FFFFFF; /* White background */
+  background-color: #ffffff; /* White background */
   padding: 10px;
   text-align: center;
   border-radius: 8px;
@@ -113,19 +122,19 @@ h1, h2 {
 
 /* Bar for "Hey user!" text */
 .home-bar {
-  background-color: #B4C2CC; /* Light blue-grey background */
+  background-color: #b4c2cc; /* Light blue-grey background */
   padding: 10px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
-  color:#333333
+  color: #333333;
 }
 
 /* View item styling */
 .view-item {
   color: #333333; /* Dark grey for text */
-  background-color: #FFFFFF; /* White background */
+  background-color: #ffffff; /* White background */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -144,7 +153,7 @@ h1, h2 {
 }
 
 .item-box {
-  background-color: #F5D7D7; /* Light pink for item cards */
+  background-color: #f5d7d7; /* Light pink for item cards */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -162,7 +171,7 @@ h1, h2 {
 
 /* Recently added items */
 .recently-added-items .item {
-  background-color: #F5D7D7; /* Light pink background for item cards */
+  background-color: #f5d7d7; /* Light pink background for item cards */
   padding: 10px;
 }
 
@@ -174,7 +183,7 @@ h1, h2 {
 }
 
 .item-box {
-  background-color: #F5D7D7; /* Light pink for item cards */
+  background-color: #f5d7d7; /* Light pink for item cards */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
